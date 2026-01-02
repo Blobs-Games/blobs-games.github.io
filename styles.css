@@ -415,7 +415,7 @@ body {
    ============================================ */
 
 .creativity-section {
-    background: #6b46c1;
+    background: linear-gradient(to right, rgb(154, 90, 90), rgb(124, 74, 151));
     padding: 6rem var(--spacing-lg);
 }
 
@@ -433,30 +433,20 @@ body {
 .creativity-image {
     width: 100%;
     height: 400px;
-    background: linear-gradient(180deg, #f97316 0%, #ec4899 30%, #8b5cf6 70%, #3b82f6 100%);
+    background: url('img/ship_variations.gif') no-repeat center;
+    background-size: cover;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.creativity-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('img/ship_variations.gif') no-repeat center;
-    background-size: cover;
-    opacity: 0.95;
-}
 
 /* ============================================
    LEARN MORE / FOOTER SECTION
    ============================================ */
 
 .learn-more-section {
-    background: linear-gradient(180deg, #2d1b4e 0%, #1e1b4e 100%);
+    background: linear-gradient(to right, rgb(44, 73, 161), rgb(91, 55, 150));
     padding: 6rem var(--spacing-lg);
     position: relative;
 }
@@ -578,7 +568,7 @@ body {
 
 .page-about,
 .page-contact {
-    background: linear-gradient(135deg, #1a0f2e 0%, #2d1b4e 100%);
+    background: linear-gradient(to right, rgb(44, 73, 161), rgb(91, 55, 150));
     min-height: 100vh;
     padding-top: 80px;
     position: relative;
@@ -600,8 +590,6 @@ body {
 
 .about-content-box,
 .contact-content-box {
-    background: rgba(45, 27, 78, 0.8);
-    backdrop-filter: blur(10px);
     padding: var(--spacing-xl);
     border-radius: 20px;
     width: 100%;
@@ -714,16 +702,7 @@ body {
         height: 35px;
     }
     
-    .blob-logo::before {
-        width: 8px;
-        height: 8px;
-        top: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        box-shadow: 
-            -6px 0 0 -2px white,
-            6px 0 0 -2px white;
-    }
+
     
    
 
@@ -741,10 +720,7 @@ body {
         padding-top: 80px;
     }
 
-    .hero-background::before {
-        background-size: cover;
-        background-position: center;
-    }
+
 
     .hero-content-wrapper {
         padding: var(--spacing-lg) var(--spacing-sm);
