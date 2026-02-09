@@ -607,8 +607,15 @@ body {
 .contact-left-panel {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: var(--spacing-xs);
 }
+
+.cover-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 
 .team-photo-placeholder,
 .contact-placeholder {
@@ -836,10 +843,7 @@ body {
         gap: var(--spacing-lg);
     }
 
-    .about-left-panel,
-    .contact-left-panel {
-        order: -1;
-    }
+
 
     .team-photo-placeholder,
     .contact-placeholder {
