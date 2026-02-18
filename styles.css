@@ -1,6 +1,4 @@
-/* ============================================
-   FONTS & TYPOGRAPHY BASE
-   ============================================ */
+
 
 @font-face {
     font-family: 'Sofia Pro Soft Sans';
@@ -18,9 +16,7 @@
     font-display: swap;
 }
 
-/* ============================================
-   CSS VARIABLES
-   ============================================ */
+
 
 :root {
     --purple-dark: #2d1b4e;
@@ -30,11 +26,11 @@
     --blue: #3b82f6;
     --orange: #f97316;
     
-    /* Typography */
+   
     --font-body: 'Sofia Pro Soft Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-decorative: 'Cinzel Decorative', serif;
     
-    /* Font Sizes */
+
     --fs-heading-large: 2.1rem;
     --fs-heading-medium: 1.5rem;
     --fs-body: 1.5rem;
@@ -42,7 +38,7 @@
     --fs-caption: 0.95rem;
     --fs-small: 0.9rem;
     
-    /* Spacing */
+
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
@@ -51,9 +47,7 @@
     --spacing-xxl: 4rem;
 }
 
-/* ============================================
-   RESET & BASE STYLES
-   ============================================ */
+
 
 * {
     margin: 0;
@@ -68,11 +62,9 @@ body {
     overflow-x: hidden;
 }
 
-/* ============================================
-   TYPOGRAPHY CLASSES
-   ============================================ */
 
-/* Headings - Large (h1, main headings) */
+
+
 .heading-large {
     font-family: var(--font-body);
     font-size: var(--fs-heading-large);
@@ -81,7 +73,7 @@ body {
     line-height: 1.2;
 }
 
-/* Headings - Medium (h2, h3, subheadings) */
+
 .heading-medium {
     font-family: var(--font-body);
     font-size: var(--fs-heading-medium);
@@ -89,7 +81,7 @@ body {
     color: white;
 }
 
-/* Body Text - Regular */
+
 .body-text {
     font-family: var(--font-body);
     font-size: var(--fs-body);
@@ -98,7 +90,7 @@ body {
     line-height: 1.6;
 }
 
-/* Body Text - Small */
+
 .body-text-small {
     font-family: var(--font-body);
     font-size: var(--fs-body-small);
@@ -106,7 +98,7 @@ body {
     color: white;
 }
 
-/* Caption / Small Italicized Text */
+
 .caption {
     font-family: var(--font-body);
     font-size: var(--fs-caption);
@@ -115,7 +107,7 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Decorative Text (CTA Links) */
+
 .decorative-text {
     font-family: var(--font-decorative);
     font-size: var(--fs-body);
@@ -129,9 +121,7 @@ body {
     opacity: 0.8;
 }
 
-/* ============================================
-   HEADER / NAVIGATION
-   ============================================ */
+
 
 .header {
     position: absolute;
@@ -174,7 +164,7 @@ body {
     color: white;
 }
 
-.desktop-nav {
+/* .desktop-nav {
     display: flex;
     gap: var(--spacing-lg);
 }
@@ -192,55 +182,7 @@ body {
     opacity: 0.8;
 }
 
-/* Blob Logo */
-.blob-logo {
-    width: 40px;
-    height: 40px;
-    background: var(--purple-light);
-    border-radius: 50% 40% 50% 40%;
-    position: relative;
-    animation: blob 3s ease-in-out infinite;
-}
 
-@keyframes blob {
-    0%, 100% { border-radius: 50% 40% 50% 40%; }
-    25% { border-radius: 40% 50% 40% 50%; }
-    50% { border-radius: 50% 50% 40% 40%; }
-    75% { border-radius: 40% 40% 50% 50%; }
-}
-
-
-
-
-
-
-
-.blob-logo-small {
-    width: 30px;
-    height: 30px;
-    background: var(--purple-light);
-    border-radius: 50% 40% 50% 40%;
-    position: relative;
-    animation: blob 3s ease-in-out infinite;
-}
-
-
-
-
-}
-
-
-
-.blob-inline {
-    display: inline-flex;
-    align-items: center;
-}
-
-.mobile-blob {
-    display: none;
-}
-
-/* Mobile Navigation */
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -276,22 +218,24 @@ body {
     font-size: var(--fs-body-small);
     color: white;
     text-decoration: none;
-}
+} */
 
-/* ============================================
-   HERO SECTION
-   ============================================ */
 
-.hero {
+
+
+
+
+.landing {
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
+    
 }
 
 
-.hero-background {
+.ship-background {
     content: '';
     position: absolute;
     top: 0;
@@ -305,7 +249,7 @@ body {
     opacity: 1;
 }
 
-.hero-content-wrapper {
+.intro-content-wrapper {
     position: relative;
     z-index: 1;
     width: 100%;
@@ -316,12 +260,11 @@ body {
     padding: 0;
 }
 
-.hero-content-box {
+.intro-content-box {
     background: linear-gradient(to right, rgba(53, 3, 147, 0) 0%, rgba(53, 3, 147, 0.5) 30%);
     /* backdrop-filter: blur(10px); */
     /* padding: var(--spacing-xl); */
     padding: 7rem;
-    border-radius: 0 20px 20px 0;
     width: 40%;
     min-width: 550px;
     height: 100vh;
@@ -333,28 +276,16 @@ body {
     margin: 0;
 }
 
-.game-logo-container {
-    /* margin-bottom: var(--spacing-xs); */
-    margin-bottom: -3rem;
-}
 
 .game-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
+    margin-bottom: -3rem;
 }
 
 
-
-.game-logo-image {
-    width: 300px;
-    height: 300px;
-    background-image: url('img/p5411_logo.png');
-    background-size: cover;
-    position: relative;
-
-}
 
 .heading-medium {
     letter-spacing: 2px;
@@ -410,16 +341,12 @@ body {
 }
 
 
-/* ============================================
-   CREATIVITY SECTION
-   ============================================ */
 
-.creativity-section {
-    background: linear-gradient(to right, rgb(154, 90, 90), rgb(124, 74, 151));
+.description {
     padding: 6rem var(--spacing-lg);
 }
 
-.creativity-container {
+.description-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -430,20 +357,10 @@ body {
 
 
 
-.creativity-image {
-    width: 100%;
-    height: 400px;
-    background: url('img/ship_variations.gif') no-repeat center;
-    background-size: cover;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
 
 
-/* ============================================
-   LEARN MORE / FOOTER SECTION
-   ============================================ */
+
+
 
 .learn-more-section {
     background: linear-gradient(to right, rgb(44, 73, 161), rgb(91, 55, 150));
@@ -562,9 +479,7 @@ body {
 }
 
 
-/* ============================================
-   ABOUT & CONTACT PAGES
-   ============================================ */
+
 
 .page-about,
 .page-contact {
@@ -690,6 +605,9 @@ body {
         display: flex;
         order: -1;
     }
+
+   
+
     
     .logo-container {
         position: absolute;
@@ -722,26 +640,25 @@ body {
         background: var(--purple-dark);
     }
 
-    .hero {
-        min-height: auto;
-        padding-top: 80px;
-    }
 
 
 
-    .hero-content-wrapper {
-        padding: var(--spacing-lg) var(--spacing-sm);
+
+    .intro-content-wrapper {
         justify-content: center;
-        height: auto;
-        min-height: calc(100vh - 80px);
+        height: 100%;
+        width: 100%;
+        margin: 0;
     }
 
-    .hero-content-box {
-        max-width: 100%;
+    .intro-content-box {
         margin: 0;
-        padding: var(--spacing-lg);
         text-align: center;
         align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-size: cover;
+        width: 100%
     }
 
     .game-logo {
@@ -764,11 +681,11 @@ body {
     }
 
 
-    .creativity-section {
+    .description {
         padding: var(--spacing-xxl) var(--spacing-sm);
     }
 
-    .creativity-container {
+    .description-container {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
