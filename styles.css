@@ -10,7 +10,7 @@
     --orange: #f97316;
     --font-body: 'Balsamiq Sans', sans-serif;
     --font-decorative: 'Cinzel Decorative', serif;
-    --fs-heading-large: 2.1rem;
+    --fs-heading-large: 1.6rem;
     --fs-heading-medium: 1.5rem;
     --fs-body: 1.5rem;
     --fs-body-small: 1rem;
@@ -54,7 +54,7 @@ body {
 .heading-medium {
     font-family: var(--font-body);
     font-size: var(--fs-heading-medium);
-    font-weight: 700;
+    font-weight: 400;
     color: white;
 }
 
